@@ -11,22 +11,23 @@ For includes, variables and structures storing I used header file: libs_vars.h
 
 ## Requirements
 ### Arduino IDE ESP32 libraries:
-Wifi
-RemoteXY
-ESP32Servo
-I2Cdev
-AutoPID
-MPU6050_6Axis_MotionApps20
-Wire
+ - Wifi
+ - RemoteXY
+ - ESP32Servo
+ - I2Cdev
+ - AutoPID
+ - MPU6050_6Axis_MotionApps20
+ - Wire
 
 ### Hardware:
-DoIt ESP32 Devkit V1
-MPU6050
-4 ESC
-4 Brushless Motors
-LiPol Battery
-Connectors
-Cables
+
+ - DoIt ESP32 Devkit V1
+ - MPU6050
+ - 4 ESC
+ - 4 Brushless Motors
+ - LiPol Battery
+ - Connectors
+ - Cables
 
 ## Board and Pinout
 
