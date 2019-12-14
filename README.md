@@ -50,32 +50,7 @@ Thanks to dual core and WiFi/ BLE this board was perfect fit for Drone.
 Fast graph made using [Mermaid](https://mermaidjs.github.io/). For improvement in the future.
 
 
-```mermaid 
-graph LR
-    A[Error] --> B(Kp)
-    A --> L[Sign]
-	A --> C(Kd)
-	A --> D(Ki)
-	B --> E{PID}
-	C --> E
-	G[0] --> F
-	D --> F((or))
-	F --> E
-	E --> H(( ))
-	H --> K[Sign]
-	L --> M[==]
-	K --> M
-	M --> N[AND]
-	N -->|decisive| F
-	H --> I(Clamping Saturation Limit)
-	I --> J(( ))
-	J --> O[=/=]
-	H --> O
-	O --> N
-	J --> P[Actuator]
-	P --> R>Output]
-	
-```
+![Graph](https://github.com/wasmac/Drone/blob/master/images/mermaid-diagram-20191214212251.png)
 
 
 ## Android/ iOS App
