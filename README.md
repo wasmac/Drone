@@ -50,7 +50,8 @@ Thanks to dual core and WiFi/ BLE this board was perfect fit for Drone.
 Fast graph made using [Mermaid](https://mermaidjs.github.io/). For improvement in the future.
 
 
-```mermaid graph LR
+```mermaid 
+graph LR
     A[Error] --> B(Kp)
     A --> L[Sign]
 	A --> C(Kd)
