@@ -82,7 +82,7 @@ graph LR
 
 Application was made using [RemoteXY](http://remotexy.com/en/) framework.
 
-![Application appearance](https://photos.app.goo.gl/x6Mm86kQ2E3135x17)
+![Application appearance](https://github.com/wasmac/Drone/blob/master/images/App.PNG)
 
 > App made for this project was made using **free** trial version.
 
