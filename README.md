@@ -31,7 +31,7 @@ For includes, variables and structures storing I used header file: libs_vars.h
 
 ## Board and Pinout
 
-Board used in this project is ==DoIt ESP32 Devkit V1==.
+Board used in this project is **DoIt ESP32 Devkit V1**.
 Thanks to dual core and WiFi/ BLE this board was perfect fit for Drone.
 > Although small range of antena and the fact that it cant be replaced should be taken into consideration before choosing it.
 
