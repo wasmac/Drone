@@ -34,14 +34,14 @@ Board used in this project is ==DoIt ESP32 Devkit V1==.
 Thanks to dual core and WiFi/ BLE this board was perfect fit for Drone.
 > Although small range of antena and the fact that it cant be replaced should be taken into consideration before choosing it.
 
-![Board Pinout](https://photos.app.goo.gl/BrkvT7EPfsxajjn17)
+![Board Pinout](https://github.com/wasmac/Drone/blob/master/images/ESP32-Pinout.jpg)
 
 
 
 
 ### Hardware Connection
 
-![Connections](https://imgur.com/a/Aexga9W)
+![Connections](https://github.com/wasmac/Drone/blob/master/images/Schematic_Esp32-schema_Sheet-1_20191214194147.png)
 
 
 
