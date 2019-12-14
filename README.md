@@ -41,7 +41,7 @@ Thanks to dual core and WiFi/ BLE this board was perfect fit for Drone.
 
 ### Hardware Connection
 
-![Connections](https://photos.app.goo.gl/WN4FYiuVuwnd45sR8)
+![Connections](https://imgur.com/a/Aexga9W)
 
 
 
