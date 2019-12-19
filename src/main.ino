@@ -52,7 +52,7 @@ void setup() {
               NULL,             /* Parameter passed as input of the task */
               1,                /* Priority of the task. */
               &core0,           /* Task handle. */
-              1);               /* Core */     
+              0);               /* Core */     
 
   xTaskCreatePinnedToCore(
               core1_task,       /* Task function. */
