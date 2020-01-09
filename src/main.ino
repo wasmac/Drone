@@ -10,17 +10,17 @@ void core0_task(void* parameter){                                      //task wo
           motors_on_off();                                             //turns motors on or off if left joy value < 150
           d_mot_on_off = mot_on_off?1.0:0.0;                           //bool to double
           dtostrf(d_mot_on_off, 0, 1, RemoteXY.text_1);                //show if on or off in application window
-          dtostrf(kp_yaw*100, 0, 1, RemoteXY.text_2);                  //show kp value <-- testing purposes
+          dtostrf(kp_roll*100, 0, 1, RemoteXY.text_2);          //show last changed PID value <-- testing purposes
     }  
 }
 
 void core1_task(void* parameter){                                      //task working on core 1 of ESP32
   for(;;){
           pid_desired_ypr();                                           //maping function for calcualting desired angles for controlling the drone with app
-          //calibration();                                             //function used for calibration of kp ki and kd values manually in app
+          //calibration();                                               //function used for calibration of kp ki and kd values manually in app
           pid_compute();                                               //runs pid calculations (for all three angles)
           pid_to_ms();                                                 //maps pid calculations into ms so they can be used as motor speed
-          pid_saturation_control();                                    //windup check for integral part of pid controller
+          //pid_saturation_control();                                    //windup check for integral part of pid controller
           calculate_motor_speed();                                     //sums up values from PID and joysticks
           adjust_motrs_speed();                                        //sends calculculated speed to all motors
     }  
