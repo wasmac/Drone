@@ -84,8 +84,3 @@ void adjust_motrs_speed(){
   mot_L_F.writeMicroseconds(mot_L_F_speed);
   mot_L_B.writeMicroseconds(mot_L_B_speed);
   }
-
-
-
-
-  
