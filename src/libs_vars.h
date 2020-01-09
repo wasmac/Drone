@@ -6,9 +6,9 @@
 #endif
 #include <RemoteXY.h>
 #include <ESP32Servo.h>
-#include <I2Cdev.h>
-//#include <PID_v1.h>
 #include <AutoPID.h>
+
+#include <I2Cdev.h>
 #include "MPU6050_6Axis_MotionApps20.h"
 #if I2CDEV_IMPLEMENTATION == I2CDEV_ARDUINO_WIRE
     #include "Wire.h"
@@ -46,9 +46,9 @@ bool printMPU = true;               //set true to print Yaw Pitch and Roll value
 #define pid_max_yaw 180
 #define pid_min_pitch_roll -30
 #define pid_max_pitch_roll 30
-double kp_yaw = 0.216, kp_pitch = 0.216, kp_roll = 0.216;
-double ki_yaw = 0.36, ki_pitch = 0.36, ki_roll = 0.36;
-double kd_yaw = 0.09, kd_pitch = 0.09, kd_roll = 0.09;
+double kp_yaw = 0.0, kp_pitch = 0.175, kp_roll = 0.175;
+double ki_yaw = 0.0, ki_pitch = 0.01, ki_roll = 0.01;
+double kd_yaw = 0.0, kd_pitch = 17310.0, kd_roll = 17310.0;
 double desired_yaw = 0.0;
 double desired_roll = 0.0;
 double desired_pitch = 0.0;
@@ -116,9 +116,6 @@ int wifi_joystick_2_y = 1500; //was 1000
 #define MIN_PULSE_LENGTH 1000 
 #define MAX_PULSE_LENGTH 2000 
 double d_mot_on_off;
-int calib_x = 1500;
-int calib_y = 1500;
-int calib_z = 1500;
 int mot_R_F_speed = 1000;
 int mot_R_B_speed = 1000;
 int mot_L_F_speed = 1000;
@@ -126,8 +123,21 @@ int mot_L_B_speed = 1000;
 bool mot_on_off = false;
 bool mot_flag = false;
 bool mot_calibration = true;  //to calibrate manually set to true
+
+
+/////////////////////////////////////////////////////////////
+///                                                       ///
+///               Callibration PART                       ///
+///                                                       ///
+/////////////////////////////////////////////////////////////
+
+int calib_x = 1500;
+int calib_y = 1500;
+int calib_z = 1500;
 bool calib_flag = false;
 bool calib_flag_2 = false;
+double calib_pid_gain = 0.0;
+
 
 /////////////////////////////////////////////////////////////
 ///                                                       ///
