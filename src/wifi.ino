@@ -1,4 +1,3 @@
-
 void wifi_init(){
   RemoteXY_Init();
 }
