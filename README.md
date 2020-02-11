@@ -46,13 +46,6 @@ Thanks to dual core and WiFi/ BLE this board was perfect fit for Drone.
 
 
 
-## PID controller
-
-Fast graph made using [Mermaid](https://mermaidjs.github.io/). For improvement in the future.
-
-
-![Graph](https://github.com/wasmac/Drone/blob/master/images/mermaid-diagram-20191214212251.png)
-
 
 ## Android/ iOS App
 
@@ -61,13 +54,6 @@ Application was made using [RemoteXY](http://remotexy.com/en/) framework.
 ![Application appearance](https://github.com/wasmac/Drone/blob/master/images/App.PNG)
 
 > App made for this project was made using **free** trial version.
-
-
-
-
-## Project status
-
-Currently under **active** development.
 
 
 
