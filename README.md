@@ -42,7 +42,7 @@ Thanks to dual core and WiFi/ BLE this board was perfect fit for Drone.
 
 ### Hardware Connection
 
-![Connections](https://github.com/wasmac/Drone/blob/master/images/Schematic_Esp32-schema_Sheet-1_20191214194147.png)
+![Connections](https://github.com/wasmac/Drone/blob/master/images/14.3.jpg)
 
 
 
