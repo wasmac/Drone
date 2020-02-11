@@ -46,9 +46,9 @@ bool printMPU = true;               //set true to print Yaw Pitch and Roll value
 #define pid_max_yaw 180
 #define pid_min_pitch_roll -30
 #define pid_max_pitch_roll 30
-double kp_yaw = 0.0, kp_pitch = 0.175, kp_roll = 0.175;
-double ki_yaw = 0.0, ki_pitch = 0.01, ki_roll = 0.01;
-double kd_yaw = 0.0, kd_pitch = 17310.0, kd_roll = 17310.0;
+double kp_yaw = 0.0, kp_pitch = 0.6, kp_roll = 0.6;
+double ki_yaw = 0.0, ki_pitch = 0.038, ki_roll = 0.038;
+double kd_yaw = 0.0, kd_pitch = 3.0, kd_roll = 3.0;
 double desired_yaw = 0.0;
 double desired_roll = 0.0;
 double desired_pitch = 0.0;
